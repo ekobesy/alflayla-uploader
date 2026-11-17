@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>AlfLayla Uploader - finishing sign-in</title></head>
+<body style="font-family:sans-serif;padding:2em;max-width:40em">
+<p>Finishing the sign-in on your PC&hellip;</p>
+<p id="f" style="display:none">If nothing happens, <a id="a" href="#">click here</a>.</p>
+<p style="color:#666;font-size:90%">This page only hands the sign-in code to the AlfLayla uploader running on your own computer (localhost). Nothing is stored or sent anywhere else.</p>
+<script>
+var t = "http://localhost:8765/" + location.search;
+document.getElementById("a").href = t;
+setTimeout(function () { document.getElementById("f").style.display = "block"; }, 2000);
+location.replace(t);
+</script>
+</body></html>
